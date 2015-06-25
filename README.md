@@ -30,7 +30,7 @@ Extending the capabilities and functionalities of Drones is the next frontier to
 - Command Script
 - Configurations
 - Getting Software onto the drone
-#### - Make it Happen
+- Make it Happen
 - Know Issues
 - MIT License Copyright (c)
 
@@ -69,8 +69,8 @@ The Sketch once uploaded onto the Ardunio Prints the direction the drone will tr
 ![](http://s8.postimg.org/yg0ox6c05/flowchart1.png)
 ![](http://s30.postimg.org/4pr2p91td/table.png)
 There are two sketches available:
-- `Sketch 1`: Continuously prints data to the drone
-- `Sketch 2`: Only prints new data if it differs from the current data (This method takes up less memory)
+`Sketch 1`: Continuously prints data to the drone
+`Sketch 2`: Only prints new data if it differs from the current data (This method takes up less memory)
 Note: You should upload a sketch to just the ultrasonic system (not connected to the drone) and block the sensors to see what the data output is. This way you can better understand how it works and test it
 
 ### Command Script
