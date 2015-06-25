@@ -6,7 +6,7 @@
 - I decided to make it Open Source so that anyone can build it and hopefully improve the system!
 
 ### Picture of the Drone System
-![](http://s1.postimg.org/ifhv0i2m7/finalproject.png)
+![](http://s18.postimg.org/b4k7lbkl5/finalproject.png)
 
 ## Video Links
 
@@ -40,7 +40,7 @@
 ## System Overview
 ![](http://s3.postimg.org/6gyjf1orn/Sys_Over.png)
 ## Flightpath Configurations
-![](http://s2.postimg.org/hx1ve4a2x/Flightpath_Config.png)
+![](http://s11.postimg.org/yhhlyfnr7/Flightpath_Config.png)
 
 ## Project Status
 
@@ -67,16 +67,17 @@
 ## Ultrasonic System Software
 
 - The Sketch once uploaded onto the Ardunio Prints the direction the drone will travel or functions it completes depending on the spatial environment (Forward F, Right R, Left L, Stop S etc.)
-![](http://s12.postimg.org/wjl1uppx9/flowchart1.png)
+
+![](http://s8.postimg.org/yg0ox6c05/flowchart1.png)
 ![](http://s30.postimg.org/4pr2p91td/table.png)
-- There are two sketches availble:
+- There are two sketches available:
 - Sketch 1: Continuously prints data to the drone
 - Sketch 2: Only prints new data if it differs from the current data (This method takes up less memory)
 - Note: You should upload a sketch to just the ultrasonic system (not connected to the drone) and block the sensors to see what the data output is. This way you can better understand how it works and test it
 
 ## Command Script
 - This defines the drone functions using the API and tells the drone where to navigate to depending on the data received from the ultrasonic system
-![](http://s24.postimg.org/8wnclu01x/flowchart2.png)
+![](http://s9.postimg.org/eh0xldxsv/flowchart2.png)
 
 ## Configurations
 - Sensors positioned Front, Left, Right and on the Top
