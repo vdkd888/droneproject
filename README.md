@@ -7,7 +7,6 @@
 
 ### Picture of the Drone System
 ![](http://s18.postimg.org/b4k7lbkl5/finalproject.png)
-
 ## Video Links
 
 - [Take/off land](https://www.youtube.com/watch?v=tnUtOJ1HANE)
@@ -77,6 +76,7 @@
 
 ## Command Script
 - This defines the drone functions using the API and tells the drone where to navigate to depending on the data received from the ultrasonic system
+- 
 ![](http://s9.postimg.org/eh0xldxsv/flowchart2.png)
 
 ## Configurations
