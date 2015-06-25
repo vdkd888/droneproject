@@ -75,11 +75,13 @@
 - Note: You should upload a sketch to just the ultrasonic system (not connected to the drone) and block the sensors to see what the data output is. This way you can better understand how it works and test it
 
 ## Command Script
+
 - This defines the drone functions using the API and tells the drone where to navigate to depending on the data received from the ultrasonic system
 - 
 ![](http://s9.postimg.org/eh0xldxsv/flowchart2.png)
 
 ## Configurations
+
 - Sensors positioned Front, Left, Right and on the Top
 - Blocking the Top sensor triggers the drone to land
 - Blocking the Front sensor less than 50cm will make it hover in its current position
