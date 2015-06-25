@@ -21,7 +21,13 @@ Extending the capabilities and functionalities of Drones is the next frontier to
 ![](http://share.gifyoutube.com/mLZk6p.gif)
 
 - [Fly around object 1](https://www.youtube.com/watch?v=0trEX6bGvBs)
+
+![](http://share.gifyoutube.com/KBlaD6.gif)
+
 - [Fly around object 2](https://www.youtube.com/watch?v=jnLXxSN--ww)
+
+![](http://share.gifyoutube.com/KRGk38.gif)
+
 - [Fly in corridor](https://www.youtube.com/watch?v=5PRqsZNZKbs)
 
 ![](http://share.gifyoutube.com/vMLkgl.gif)
