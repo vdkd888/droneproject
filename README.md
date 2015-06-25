@@ -67,10 +67,8 @@
 ## Ultrasonic System Software
 
 - The Sketch once uploaded onto the Ardunio Prints the direction the drone will travel or functions it completes depending on the spatial environment (Forward F, Right R, Left L, Stop S etc.)
-
-! [](http://s12.postimg.org/wjl1uppx9/flowchart1.png)
-! [](http://s30.postimg.org/4pr2p91td/table.png)
-
+![](http://s12.postimg.org/wjl1uppx9/flowchart1.png)
+![](http://s30.postimg.org/4pr2p91td/table.png)
 - There are two sketches availble:
 - Sketch 1: Continously prints data to the drone
 - Sketch 2: Only prints new data if it differes from the current data (This method takes up less memory)
