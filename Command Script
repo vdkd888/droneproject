@@ -1,0 +1,48 @@
+var arDrone = require('ar-drone');
+var client = arDrone.createClient();
+var Project;
+client.after(1000, function() {
+    this.takeoff();
+  })
+client.after(2000, function() {
+    this.stop();
+  })
+client.after(500, function() {
+    this.front(0.03);
+  })
+client.after(500, function() {
+    this.stop();
+  })
+var serialport = require('node-serialport')
+var sp = new serialport.SerialPort("/dev/ttyO3", { 
+  parser: serialport.parsers.readline("\n"),
+  baud: 9600
+})
+sp.on('data', function(chunk) {
+  Project = chunk.toString();
+  console.log("%s",Project);
+  if(Project== 'T'){
+   client.stop();
+   client.land();
+   client.animateLeds('blinkRed', 5 ,2);
+ console.log("Drone Landed\n");
+  }
+  if(Project == 'F'){
+  client.front(0.08);
+  }
+  if(Project== 'L'){
+  client.left(0.06);
+  }
+  if(Project== 'R'){
+  client.right(0.06);
+  }
+  if(Project== 'Q'){
+  client.left(0.06);
+  }
+  if(Project== 'P'){
+  client.right(0.06);
+  }
+  if(Project== 'S'){
+  client.stop();
+  }
+});
