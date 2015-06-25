@@ -32,8 +32,8 @@
 - Configurations
 - Getting Software onto the drone
 - Make it happen
-- Know Isses
-- MIT Licence Copyright (c)
+- Know Issues
+- MIT License Copyright (c)
 
 ## How the System works
 ![](http://s21.postimg.org/9788e9w9j/Sys_Con.png)
@@ -44,7 +44,7 @@
 
 ## Project Status
 
-- Currently in Protoype form/development so it kinda works (see videos below), BUT use at your own risk
+- Currently in Prototype form/development so it kinda works (see videos below), BUT use at your own risk
 
 ## Hardware
 
@@ -58,7 +58,7 @@
 ## Ultrasonic System
 
 - Works just like a [simple range finder](http://www.instructables.com/id/Ultrasonic-Range-detector-using-Arduino-and-the-SR/)
-- The sensors calculate the distances of objects around the drone in the their resepctive directions, but instead of a distance output, it prints the direction the drone should travel 
+- The sensors calculate the distances of objects around the drone in the their respective directions, but instead of a distance output, it prints the direction the drone should travel 
 - Diagram of how the system is connected together
 ![](http://s10.postimg.org/xb4nhknxl/Ultra_Sys.png)
 - The Rx on the Ardunio is connected to the Tx on the serial port of the drone motherboard
@@ -70,12 +70,12 @@
 ![](http://s12.postimg.org/wjl1uppx9/flowchart1.png)
 ![](http://s30.postimg.org/4pr2p91td/table.png)
 - There are two sketches availble:
-- Sketch 1: Continously prints data to the drone
-- Sketch 2: Only prints new data if it differes from the current data (This method takes up less memory)
-- Note: You should upload a sketch to just the ultraonisc system (not connected to the drone) and block the sensors to see what the data output is. This way you can better understand how it works and test it
+- Sketch 1: Continuously prints data to the drone
+- Sketch 2: Only prints new data if it differs from the current data (This method takes up less memory)
+- Note: You should upload a sketch to just the ultrasonic system (not connected to the drone) and block the sensors to see what the data output is. This way you can better understand how it works and test it
 
 ## Command Script
-- This defines the drone functions using the API and tells the drone where to navigate to depending on the data recevied from the ultrasonic system
+- This defines the drone functions using the API and tells the drone where to navigate to depending on the data received from the ultrasonic system
 ![](http://s24.postimg.org/8wnclu01x/flowchart2.png)
 
 ## Configurations
@@ -112,7 +112,7 @@
 
 ## Known Issues (YES, IT IS BUGGY)
 
-- Memeory leak error (currently no fix, soz)
+- Memory leak error (currently no fix, soz)
 - Drone going crazy (restart everything/ Drone ON/OFF seems to work)
 - Use fully charged battery (Will not work is charge is less than 40%)
 - Restart system after each flight mission
@@ -138,4 +138,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-
