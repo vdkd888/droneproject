@@ -6,7 +6,8 @@
 ### I decided to make it Open Source so that anyone can build it and hopefully improve the system!
 
 ## Picture of the Drone System
-                                ![](http://s18.postimg.org/b4k7lbkl5/finalproject.png)
+![](http://s18.postimg.org/b4k7lbkl5/finalproject.png)
+
 ## Video Links
 
 - [Take/off land](https://www.youtube.com/watch?v=tnUtOJ1HANE)
