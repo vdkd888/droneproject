@@ -90,6 +90,7 @@ The Sketch once uploaded onto the Ardunio Prints the direction the drone will tr
 
 ![](http://s8.postimg.org/yg0ox6c05/flowchart1.png)
 ![](http://s30.postimg.org/4pr2p91td/table.png)
+
 There are two sketches available:
 `Sketch 1`: Continuously prints data to the drone
 `Sketch 2`: Only prints new data if it differs from the current data (This method takes up less memory)
