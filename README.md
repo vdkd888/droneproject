@@ -1,11 +1,10 @@
 # Developing a Collision Avoidance System for the Parrot AR Drone 2.0 to Navigate Autonomously Indoors
 
-### I decided to modify/hack the Parrot AR Drone 2.0 to enable it to fly autonomously in an indoor environment and avoid collisions in real time
-### There are few projects out there that use monocular methods using the drone camera to detect objects
-### This project differs from others as it uses sensors (ultrasonic) to successfully detect objects and navigate around them, kinda like at BAT!
-### I decided to make it Open Source so that anyone can build it and hopefully improve the system!
+### I decided to modify/hack the Parrot AR Drone 2.0 to enable it to fly autonomously in an indoor environment and avoid collisions in real time. There are few projects out there that use monocular methods using the drone camera to detect objects This project differs from others as it uses sensors (ultrasonic) to successfully detect objects and navigate around them, kinda like at BAT! I decided to make it Open Source so that anyone can build it and hopefully improve the system!
 
-## Picture of the Drone System
+Extending the capabilities and functionalities of Drones is the next frontier to explore in the new era of aerial vehicle technology. The following paper portrays the prototype development of the Parrot AR Drone framework to create a spatially aware Drone that has the ability to autonomously navigate in indoor environments and avoid collisions in real-time. The paper includes an inquiry into Drone functions, methods in which the Drone can be enhanced through hardware and software modifications, the development of an Arduino based Ultrasonic sensor system that provides the Drone with spatial awareness data to avoid obstacles and an indoor demonstration of the final prototype. Unlike related works in this field, the system did not require vision based guidance firmware or a network of powerful host computers for data processing. The Drone had the ability to autonomously create a flightpath and avoid obstacles in a closed-loop system. Depicted through demonstrations, the paper concludes that by leveraging the Parrot AR Drone client API through Node.js, designing an Ultrasonic System and understanding the Drone’s Serial port architecture, it was possible to create a Drone capable of computing spatial data to avoid obstacles and navigate indoors autonomously.
+
+### Picture of the Drone System
 ![](http://s18.postimg.org/b4k7lbkl5/finalproject.png)
 
 ## Video Links
@@ -19,7 +18,7 @@
 - [Fly in corridor around manikin](https://www.youtube.com/watch?v=fN-N3yeGaZU)
 - [Fly around me](https://www.youtube.com/watch?v=IYlJpIIJdXU)
 
-## Table of Contents
+### Table of Contents
 
 - How the System works
 - Systems Overview
@@ -35,27 +34,26 @@
 - Know Issues
 - MIT License Copyright (c)
 
-## How the System works
+### How the System works
 ![](http://s21.postimg.org/9788e9w9j/Sys_Con.png)
-## System Overview
+### System Overview
 ![](http://s3.postimg.org/6gyjf1orn/Sys_Over.png)
-## Flightpath Configurations
+### Flightpath Configurations
 ![](http://s11.postimg.org/yhhlyfnr7/Flightpath_Config.png)
 
-## Project Status
+### Project Status
 
-- Currently in Prototype form/development so it kinda works (see videos below), BUT use at your own risk
+Currently in Prototype form/development so it kinda works (see videos below), BUT use at your own risk
 
-## Hardware
+### Hardware
 
-(Stuff you need)
 - [Parrot AR Drone 2.0](http://ardrone2.parrot.com/)
 - Ardunio Uno
 - At least 4 HC-SR04 Ultraonsic Sensors: [Datasheet](http://www.micropik.com/PDF/HCSR04.pdf)
 - Lots of Wire connectors, the breadboard kind
 - Level Shifter [Mirumod](http://people.eecs.ku.edu/~jpince/Project%20Files/Serial%20Port%20&%20Power%20wiring%20diagram.pdf)
 
-## Ultrasonic System
+### Ultrasonic System
 
 - Works just like a [simple range finder](http://www.instructables.com/id/Ultrasonic-Range-detector-using-Arduino-and-the-SR/)
 - The sensors calculate the distances of objects around the drone in the their respective directions, but instead of a distance output, it prints the direction the drone should travel 
@@ -66,28 +64,28 @@
 
 ## Ultrasonic System Software
 
-- The Sketch once uploaded onto the Ardunio Prints the direction the drone will travel or functions it completes depending on the spatial environment (Forward F, Right R, Left L, Stop S etc.)
+The Sketch once uploaded onto the Ardunio Prints the direction the drone will travel or functions it completes depending on the spatial environment (Forward F, Right R, Left L, Stop S etc.)
 
 ![](http://s8.postimg.org/yg0ox6c05/flowchart1.png)
 ![](http://s30.postimg.org/4pr2p91td/table.png)
-- There are two sketches available:
-- Sketch 1: Continuously prints data to the drone
-- Sketch 2: Only prints new data if it differs from the current data (This method takes up less memory)
-- Note: You should upload a sketch to just the ultrasonic system (not connected to the drone) and block the sensors to see what the data output is. This way you can better understand how it works and test it
+There are two sketches available:
+- `Sketch 1`: Continuously prints data to the drone
+- `Sketch 2`: Only prints new data if it differs from the current data (This method takes up less memory)
+Note: You should upload a sketch to just the ultrasonic system (not connected to the drone) and block the sensors to see what the data output is. This way you can better understand how it works and test it
 
-## Command Script
+### Command Script
 
-- This defines the drone functions using the API and tells the drone where to navigate to depending on the data received from the ultrasonic system
+This defines the drone functions using the API and tells the drone where to navigate to depending on the data received from the ultrasonic system
 ![](http://s9.postimg.org/eh0xldxsv/flowchart2.png)
 
-## Configurations
+### Configurations
 
 - Sensors positioned Front, Left, Right and on the Top
 - Blocking the Top sensor triggers the drone to land
 - Blocking the Front sensor less than 50cm will make it hover in its current position
 - More sensor and distance configurations can be modified to change drone functions
 
-## Getting Software onto Drone
+### Getting Software onto Drone
 
 - Get node on the drone (This method was identified by [Maxodgen](https://gist.github.com/maxogden/4152815))
 - download node and node-serialport from https://github.com/felixge/node-cross-compiler/downloads
@@ -99,12 +97,11 @@
 - `chmod +x node`
 - `mkdir node_modules`
 - `cp -r usb/node-serialport/ node_modules/`
-
 - Copy the [ar-drone library](https://github.com/felixge/node-ar-drone) by [felixge](https://github.com/felixge/node-ar-drone) and paste the folder in `cd data/video` the same way you did node
 
 ## Make It Happen
 
-- Upload a Sketch onto the ardunio (`Sketch 1` or `Sketch 2` from this Jist)
+- Upload a Sketch onto the arduino (`Sketch 1` or `Sketch 2` from this gist)
 - Turn ON drone and wait till all LEDS are GREEN
 - Then connect the 5V to the ardunio and connect up the Rx to the Tx on the drone
 - Connect to Drone via telnet, `telnet 192.168.1.1`
@@ -113,7 +110,7 @@
 - Once running, paste the `Command Script` from this gist into the window and hit enter!
 - Now watch your drone autonomously fly and avoid obstacles MUHAHAHA!
 
-## Known Issues (YES, IT IS BUGGY)
+### Known Issues (YES, IT IS BUGGY)
 
 - Memory leak error (currently no fix, soz)
 - Drone going crazy (restart everything/ Drone ON/OFF seems to work)
