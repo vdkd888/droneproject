@@ -23,6 +23,9 @@ Extending the capabilities and functionalities of Drones is the next frontier to
 - [Fly around object 1](https://www.youtube.com/watch?v=0trEX6bGvBs)
 - [Fly around object 2](https://www.youtube.com/watch?v=jnLXxSN--ww)
 - [Fly in corridor](https://www.youtube.com/watch?v=5PRqsZNZKbs)
+
+![](http://share.gifyoutube.com/vMLkgl.gif)
+
 - [Fly in corridor around manikin](https://www.youtube.com/watch?v=fN-N3yeGaZU)
 
 ![](http://share.gifyoutube.com/Kr0pbA.gif)
