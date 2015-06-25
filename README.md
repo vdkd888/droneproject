@@ -7,7 +7,7 @@ Extending the capabilities and functionalities of Drones is the next frontier to
 ### Picture of the Drone System
 ![](http://s18.postimg.org/b4k7lbkl5/finalproject.png)
 
-## Video Demonstration Youtube links and Gifs
+## Video Demonstration: Youtube links and Gifs
 
 - [Take/off land](https://www.youtube.com/watch?v=tnUtOJ1HANE)
 
