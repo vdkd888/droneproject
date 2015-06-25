@@ -63,12 +63,12 @@
 
 ## Ultrasonic System
 
-- Works just like a [simple ranage finder](http://www.instructables.com/id/Ultrasonic-Range-detector-using-Arduino-and-the-SR/)
+- Works just like a [simple range finder](http://www.instructables.com/id/Ultrasonic-Range-detector-using-Arduino-and-the-SR/)
 - The sensors calculate the distances of objects around the drone in the their resepctive directions, but instead of a distance output, it prints the direction the drone should travel 
 - Diagram of how the system is connected together
 ![] (https://drive.google.com/open?id=0ByAVenVVIJ0CN3E3ZmlIOUs0UXc)
 - The Rx on the Ardunio is connected to the Tx on the serial port of the drone motherboard
-! [] (https://drive.google.com/open?id=0ByAVenVVIJ0CZXJrMVdFS3dQcW8)
+! [] (http://s29.postimg.org/csb3b3ch3/Droneserial.png)
 
 ## Ultrasonic System Software
 
