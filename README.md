@@ -65,7 +65,7 @@ Extending the capabilities and functionalities of Drones is the next frontier to
 
 ### Project Status
 
-Currently in Prototype form/development so it kinda works (see videos below), BUT use at your own risk
+Currently in Prototype form/development so it kinda works (see videos), BUT use at your own risk
 
 ### Hardware
 
