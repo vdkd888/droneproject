@@ -1,6 +1,6 @@
 # Developing a Collision Avoidance System for the Parrot AR Drone 2.0 to Navigate Autonomously Indoors
 
-#### I decided to modify/hack the Parrot AR Drone 2.0 to enable it to fly autonomously in an indoor environment and avoid collisions in real-time. There are few projects out there that use monocular methods using the drone camera to detect objects. This project differs from others as it uses sensors (ultrasonic) to successfully detect objects and navigate around them, kinda like at BAT! So I basically enable the data from an ardunio to be understood by the drone and ,in turn, execute those API functions (Yay!) .I decided to make it Open Source so that anyone can build it and hopefully improve the system!
+#### I decided to modify/hack the Parrot AR Drone 2.0 to enable it to fly autonomously in an indoor environment and avoid collisions in real-time. There are few projects out there that use monocular methods using the drone camera to detect objects. This project differs from others as it uses sensors (ultrasonic) to successfully detect objects and navigate around them, kinda like at BAT! So I basically enabled the data from an ardunio to be understood by the drone and ,in turn, execute API functionsfrom it (Yay!). I decided to make it Open Source so that anyone can build it and hopefully improve the system!
 
 Extending the capabilities and functionalities of Drones is the next frontier to explore in the new era of aerial vehicle technology. The following portrays the prototype development of the Parrot AR Drone framework to create a spatially aware Drone that has the ability to autonomously navigate in indoor environments and avoid collisions in real-time. Unlike related works in this field, the system did not require vision based guidance firmware or a network of powerful host computers for data processing. The Drone had the ability to autonomously create a flightpath and avoid obstacles in a closed-loop system. Depicted through demonstrations, the paper concludes that by leveraging the Parrot AR Drone client API through Node.js, designing an Ultrasonic System and understanding the Drone’s Serial port architecture, it was possible to create a Drone capable of computing spatial data to avoid obstacles and navigate indoors autonomously.
 
@@ -30,7 +30,7 @@ Extending the capabilities and functionalities of Drones is the next frontier to
 - Command Script
 - Configurations
 - Getting Software onto the drone
-- Make it happen
+###- Make it Happen
 - Know Issues
 - MIT License Copyright (c)
 
