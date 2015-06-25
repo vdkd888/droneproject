@@ -30,7 +30,7 @@ Extending the capabilities and functionalities of Drones is the next frontier to
 - Command Script
 - Configurations
 - Getting Software onto the drone
-###- Make it Happen
+#### - Make it Happen
 - Know Issues
 - MIT License Copyright (c)
 
