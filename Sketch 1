@@ -1,0 +1,88 @@
+//Script and Notes by Viraj Doshi
+//This script to allow the ardunio to print the direction in which the AR-Drone can travel
+//Print FORWARD unless obsracle detected within range
+//Print LEFT or RIGHT, which ever has the greatest detected distance
+//Print FORWARD will resume when FORWARD is obstacle free
+
+#define FRONT_TRIG 13 //FRONT
+#define FRONT_ECHO 12 //FRONT
+#define RIGHT_TRIG 11 //RIGHT
+#define RIGHT_ECHO 10 //RIGHT
+#define LEFT_TRIG 9 //LEFT
+#define LEFT_ECHO 8 //LEFT
+#define TOP_TRIG 7 //TOP
+#define TOP_ECHO 6 //TOP
+
+void setup() {
+  Serial.begin (9600);
+  pinMode(FRONT_TRIG, OUTPUT);
+  pinMode(FRONT_ECHO, INPUT);
+  pinMode(RIGHT_TRIG, OUTPUT);
+  pinMode(RIGHT_ECHO, INPUT);
+  pinMode(LEFT_TRIG, OUTPUT);
+  pinMode(LEFT_ECHO, INPUT);
+  pinMode(TOP_TRIG, OUTPUT);
+  pinMode(TOP_ECHO, INPUT);
+}
+
+void loop() {
+    long duration, FRONT, RIGHT, LEFT, TOP; // Duration used to calculate distance of an object from each sensor
+ 
+  digitalWrite(TOP_TRIG, LOW);            // LOW triggered to ensure no interference from incoming signals, before triggering HIGH
+  delayMicroseconds(2);
+  digitalWrite(TOP_TRIG, HIGH);           // Send outs ultrasonic wave
+  delayMicroseconds(10);                  // Delay allows for ample time to receive the echo signal from object
+  digitalWrite(TOP_TRIG, LOW);
+  duration = pulseIn(TOP_ECHO, HIGH);     // Calculates time taken to receive signal from reflected signal, pulse is HIGH when signal is received
+  TOP = (duration/2) / 29.1;              // Calculates distances using the time calculated above and the speed of sound (300m/s)
+  digitalWrite(FRONT_TRIG, LOW);
+  delayMicroseconds(2);
+  digitalWrite(FRONT_TRIG, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(FRONT_TRIG, LOW);
+  duration = pulseIn(FRONT_ECHO, HIGH);
+  FRONT = (duration/2) / 29.1;  
+  digitalWrite(RIGHT_TRIG, LOW);
+  delayMicroseconds(2);
+  digitalWrite(RIGHT_TRIG, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(RIGHT_TRIG, LOW);
+  duration = pulseIn(RIGHT_ECHO, HIGH);  
+  RIGHT = (duration/2) / 29.1;
+  digitalWrite(LEFT_TRIG, LOW);
+  delayMicroseconds(2);
+  digitalWrite(LEFT_TRIG, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(LEFT_TRIG, LOW);
+  duration = pulseIn(LEFT_ECHO, HIGH);
+  LEFT = (duration/2) / 29.1;
+    
+    if (TOP < 60) {
+      Serial.println("T\n");
+    }
+    else{
+    if ((RIGHT < 90) && (FRONT > 80)) {
+        Serial.println("L\n");
+    }
+    if ((LEFT < 90) && (FRONT > 80)) {
+        Serial.println("R\n");
+    }  
+    if (FRONT > 90) {
+        Serial.println("F\n");
+    }
+    if (FRONT >= 7 && FRONT <= 50) {
+        Serial.println("S\n");
+    }
+    else{   
+       if ((LEFT < RIGHT) && (FRONT >=7 && FRONT <=89)) {
+         Serial.println("P\n");
+        }
+       if ((LEFT > RIGHT) && (FRONT >=7 && FRONT <=89)) {
+         Serial.println("Q\n");   
+          }
+       }
+    }
+}
+
+        
+    
