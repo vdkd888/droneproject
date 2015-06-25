@@ -10,6 +10,7 @@ Extending the capabilities and functionalities of Drones is the next frontier to
 ## Video Demonstration Links
 
 - [Take/off land](https://www.youtube.com/watch?v=tnUtOJ1HANE)
+![](http://share.gifyoutube.com/y0OE6G.gif)
 - [Fly forward land](https://www.youtube.com/watch?v=ha_LJ0GN5-8)
 - [Reaction to hand](https://www.youtube.com/watch?v=DDz88Plf-ZM)
 - [Fly around object 1](https://www.youtube.com/watch?v=0trEX6bGvBs)
