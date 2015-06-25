@@ -103,9 +103,9 @@ This defines the drone functions using the API and tells the drone where to navi
 
 - Get node on the drone (This method was identified by [Maxodgen](https://gist.github.com/maxogden/4152815))
 - download node and node-serialport from https://github.com/felixge/node-cross-compiler/downloads
-- untar node-serialport and put node and the node-serialport folder onto a usb thumbstick thingy
-- put the thumbstick thingy into the drone (like in the above photo)
-- telnet into drone, `telnet 192.168.1.1`
+- untar node-serialport and put node and the node-serialport folder onto a usb
+- put the usb into the drone
+- telnet onto drone, `telnet 192.168.1.1` (use putty for windows)
 - `cd /data/video`
 - `cp usb/node .` (it might be usb1)
 - `chmod +x node`
