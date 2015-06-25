@@ -6,19 +6,18 @@
 - I decided to make it Open Source so that anyone can build it and hopefully improve the system!
 
 ### Picture of the Drone System
-
-![] (https://drive.google.com/open?id=0ByAVenVVIJ0CUy1mbkpVd21GYzg)
+![](http://s1.postimg.org/ifhv0i2m7/finalproject.png)
 
 ## Video Links
 
-- [Take/off land] (https://www.youtube.com/watch?v=tnUtOJ1HANE)
-- [Fly forward land] (https://www.youtube.com/watch?v=ha_LJ0GN5-8)
-- [Reaction to hand] (https://www.youtube.com/watch?v=DDz88Plf-ZM)
-- [Fly around object 1] (https://www.youtube.com/watch?v=0trEX6bGvBs)
-- [Fly around object 2] (https://www.youtube.com/watch?v=jnLXxSN--ww)
-- [Fly in corridor] (https://www.youtube.com/watch?v=5PRqsZNZKbs)
-- [Fly in corridor around manikin] (https://www.youtube.com/watch?v=fN-N3yeGaZU)
-- [Fly around me] (https://www.youtube.com/watch?v=IYlJpIIJdXU)
+- [Take/off land](https://www.youtube.com/watch?v=tnUtOJ1HANE)
+- [Fly forward land](https://www.youtube.com/watch?v=ha_LJ0GN5-8)
+- [Reaction to hand](https://www.youtube.com/watch?v=DDz88Plf-ZM)
+- [Fly around object 1](https://www.youtube.com/watch?v=0trEX6bGvBs)
+- [Fly around object 2](https://www.youtube.com/watch?v=jnLXxSN--ww)
+- [Fly in corridor](https://www.youtube.com/watch?v=5PRqsZNZKbs)
+- [Fly in corridor around manikin](https://www.youtube.com/watch?v=fN-N3yeGaZU)
+- [Fly around me](https://www.youtube.com/watch?v=IYlJpIIJdXU)
 
 ## Table of Contents
 
@@ -37,16 +36,11 @@
 - MIT Licence Copyright (c)
 
 ## How the System works
-
-![] (https://drive.google.com/open?id=0ByAVenVVIJ0CQVg5WjRHRmlVb2M)
-
+![](http://s11.postimg.org/mlgmlnw8z/Sys_Con.png)
 ## System Overview
-
-![] (https://drive.google.com/open?id=0ByAVenVVIJ0CUjdUV3RWREM4Y1k)
-
+![](http://s3.postimg.org/6gyjf1orn/Sys_Over.png)
 ## Flightpath Congifurations
-
-![] (https://drive.google.com/open?id=0ByAVenVVIJ0CMUpoNkhLNVNQRE0)
+![](http://s2.postimg.org/hx1ve4a2x/Flightpath_Config.png)
 
 ## Project Status
 
@@ -66,15 +60,17 @@
 - Works just like a [simple range finder](http://www.instructables.com/id/Ultrasonic-Range-detector-using-Arduino-and-the-SR/)
 - The sensors calculate the distances of objects around the drone in the their resepctive directions, but instead of a distance output, it prints the direction the drone should travel 
 - Diagram of how the system is connected together
-![] (https://drive.google.com/open?id=0ByAVenVVIJ0CN3E3ZmlIOUs0UXc)
+![](http://s10.postimg.org/xb4nhknxl/Ultra_Sys.png)
 - The Rx on the Ardunio is connected to the Tx on the serial port of the drone motherboard
-! [] (http://s29.postimg.org/csb3b3ch3/Droneserial.png)
+![](http://s29.postimg.org/csb3b3ch3/Droneserial.png)
 
 ## Ultrasonic System Software
 
 - The Sketch once uploaded onto the Ardunio Prints the direction the drone will travel or functions it completes depending on the spatial environment (Forward F, Right R, Left L, Stop S etc.)
-! [] (https://drive.google.com/open?id=0ByAVenVVIJ0CQW9lZWhWSzliSXc)
-! [] (https://https://drive.google.com/open?id=0ByAVenVVIJ0CLW9tZ3pwMFJGSE0)
+
+! [](http://s12.postimg.org/wjl1uppx9/flowchart1.png)
+! [](http://s30.postimg.org/4pr2p91td/table.png)
+
 - There are two sketches availble:
 - Sketch 1: Continously prints data to the drone
 - Sketch 2: Only prints new data if it differes from the current data (This method takes up less memory)
@@ -82,7 +78,7 @@
 
 ## Command Script
 - This defines the drone functions using the API and tells the drone where to navigate to depending on the data recevied from the ultrasonic system
-![] (https://drive.google.com/open?id=0ByAVenVVIJ0CaHd0RDllTkpnOE0)
+![](http://s24.postimg.org/8wnclu01x/flowchart2.png)
 
 ## Configurations
 - Sensors positioned Front, Left, Right and on the Top
