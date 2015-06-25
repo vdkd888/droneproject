@@ -40,7 +40,7 @@ Extending the capabilities and functionalities of Drones is the next frontier to
 
 ![](http://share.gifyoutube.com/yAb9lg.gif)
 
-### Table of Contents
+### Contents
 
 - How the System works
 - Systems Overview
@@ -53,7 +53,7 @@ Extending the capabilities and functionalities of Drones is the next frontier to
 - Configurations
 - Getting Software onto the drone
 - Make it Happen
-- Know Issues
+- Known Issues
 - MIT License Copyright (c)
 
 ### How the System works
