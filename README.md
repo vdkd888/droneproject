@@ -1,11 +1,11 @@
 # Developing a Collision Avoidance System for the Parrot AR Drone 2.0 to Navigate Autonomously Indoors
 
-- I decided to modify/hack the Parrot AR Drone 2.0 to enable it to fly autonomously in an indoor environment and avoid collisions in real time
-- There are few projects out there that use monocular methods using the drone camera to detect objects
-- This project differs from others as it uses sensors (ultrasonic) to successfully detect objects and navigate around them, kinda like at BAT!
-- I decided to make it Open Source so that anyone can build it and hopefully improve the system!
+### I decided to modify/hack the Parrot AR Drone 2.0 to enable it to fly autonomously in an indoor environment and avoid collisions in real time
+### There are few projects out there that use monocular methods using the drone camera to detect objects
+### This project differs from others as it uses sensors (ultrasonic) to successfully detect objects and navigate around them, kinda like at BAT!
+### I decided to make it Open Source so that anyone can build it and hopefully improve the system!
 
-### Picture of the Drone System
+## Picture of the Drone System
 ![](http://s18.postimg.org/b4k7lbkl5/finalproject.png)
 ## Video Links
 
