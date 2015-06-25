@@ -39,7 +39,7 @@
 ![](http://s21.postimg.org/9788e9w9j/Sys_Con.png)
 ## System Overview
 ![](http://s3.postimg.org/6gyjf1orn/Sys_Over.png)
-## Flightpath Congifurations
+## Flightpath Configurations
 ![](http://s2.postimg.org/hx1ve4a2x/Flightpath_Config.png)
 
 ## Project Status
