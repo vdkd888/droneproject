@@ -138,7 +138,7 @@ This defines the drone functions using the API and tells the drone where to navi
 
 - Memory leak error (currently no fix, soz)
 - Drone going crazy (restart everything/ Drone ON/OFF seems to work)
-- Use fully charged battery (Will not work is charge is less than 40%)
+- Use fully charged battery (Will not work if charge is less than 40%)
 - Restart system after each flight mission
 
 ## MIT License Copyright (c)
