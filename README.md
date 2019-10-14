@@ -5,7 +5,7 @@
 Extending the capabilities and functionalities of Drones is the next frontier to explore in the new era of aerial vehicle technology. The following portrays the prototype development of the Parrot AR Drone framework to create a spatially aware Drone that has the ability to autonomously navigate in indoor environments and avoid collisions in real-time. Unlike related works in this field, the system did not require vision based guidance firmware or a network of powerful host computers for data processing. The Drone had the ability to autonomously create a flightpath and avoid obstacles in a closed-loop system. Depicted through demonstrations, the project concludes that by leveraging the Parrot AR Drone client API through Node.js, designing an Ultrasonic System and understanding the Drone’s Serial port architecture, it was possible to create a Drone capable of computing spatial data to avoid obstacles and navigate indoors autonomously.
 
 ### Final Drone System
-![](https://drive.google.com/file/d/0ByAVenVVIJ0CUy1mbkpVd21GYzg/view?usp=sharing)
+![](https://i.postimg.cc/1gzt4f0h/finalproject.png)
 ## Video Demonstration: Youtube links and Gifs
 
 - [Take/off land](https://www.youtube.com/watch?v=tnUtOJ1HANE)
@@ -57,11 +57,11 @@ Extending the capabilities and functionalities of Drones is the next frontier to
 - MIT License Copyright (c)
 
 ### How the System works
-![](http://s21.postimg.org/9788e9w9j/Sys_Con.png)
+![](https://i.postimg.cc/3dMd9rhm/SysCon.png)
 ### System Overview
-![](http://s3.postimg.org/6gyjf1orn/Sys_Over.png)
+![](https://i.postimg.cc/hJ4JxCBY/SysOver.png)
 ### Flightpath Configurations
-![](http://s11.postimg.org/yhhlyfnr7/Flightpath_Config.png)
+![](https://i.postimg.cc/K431nk6m/Flightpath-Config.png)
 
 ### Project Status
 
